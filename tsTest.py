@@ -7,7 +7,7 @@ lm = ev3.LargeMotor('outA')
 
 # The Loop
 while True:
-  # Check if your holding down the touch sensor 
-  if(ts.value() == 1):
+  # Check if you are holding down the touch sensor 
+  if ts.value() == 1:
   # Run the motor!
     lm.run_timed(time_sp = 1, speed_sp = 1000)
